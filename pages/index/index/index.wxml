@@ -1,0 +1,13 @@
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class='content' style='top:{{StatusBar}}px;'>迎新助手</view>
+  </view>
+</view>
+
+<view class='nav-list' style='padding: 10px 40px;'>
+  <navigator open-type="navigate" hover-class='none' url="../{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+    <view class="nav-title">{{item.title}}</view>
+    <view class="nav-name">{{item.name}}</view>
+    <text class='icon-{{item.icon}}'></text>
+  </navigator>
+</view>

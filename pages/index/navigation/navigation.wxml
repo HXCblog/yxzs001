@@ -1,0 +1,21 @@
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+   <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 返回
+    </navigator>
+    <view class='content' style='top:{{StatusBar}}px;'>校园导航图</view>
+  </view>
+</view>
+
+
+<view class="cu-card case ">
+  <view wx:for="{{data}}" wx:key class="cu-item shadow">
+    <view class='image'>
+      <image src="{{item.src}}"  data-src='{{item.src}}'  mode="widthFix" bindtap='preview'></image>
+      <view class='cu-bar bg-shadeBottom'>{{item.title}}</view>
+    </view>
+    <view class='text-gray text-sm flex justify-between'>
+        {{item.summary}}
+    </view>
+  </view>
+</view>

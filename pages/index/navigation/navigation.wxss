@@ -1,0 +1,4 @@
+/* pages/index/navigation/navigation.wxss */
+.text-content{
+  text-align: center
+}

@@ -1,0 +1,95 @@
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+   <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 返回
+    </navigator>
+    <view class='content' style='top:{{StatusBar}}px;'>个人信息</view>
+  </view>
+</view>
+
+<view class="cu-list menu sm-border card-menu margin-top">
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>姓名：{{detail.name}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>学号：{{detail.cardNumber}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>手机号：{{detail.phone}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>邮箱：{{detail.email}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>性别：{{detail.gender}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>学院：{{detail.college}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>专业：{{detail.profession}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>班级：{{detail.className}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>宿舍：{{detail.dormitory}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>辅导员：{{detail.counsellorName}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>辅导员联系方式；{{detail.counsellorPhone}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>父母：{{detail.parentName}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>父母联系方式：{{detail.parentPhone}}</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>家庭住址：{{detail.address}}</text>
+    </view>
+  </view>
+</view>

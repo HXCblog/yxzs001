@@ -1,0 +1,24 @@
+.pic-box{
+  position: relative;
+}
+.pic-box .pic{
+  width: 95%;
+  margin: 20px auto;
+}
+.pic-box text {
+  position:absolute;
+  font-size: 16px;
+  font-weight: bold
+}
+.name{
+  top:170px;
+  left:70px;
+}
+.college{
+  top:195px;
+  left:175px;
+}
+.profession{
+  top:220px;
+  left:100px;
+}

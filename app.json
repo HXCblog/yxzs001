@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index/index",
+    "pages/index/process/process",
+    "pages/index/collect/collect",
+    "pages/index/student/student",
+    "pages/index/school/school",
+    "pages/index/notification/notification",
+    "pages/index/navigation/navigation",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    
+    "color": "#aaa",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index/index",
+        "iconPath": "/images/tabbar/basics.png",
+        "selectedIconPath": "/images/tabbar/basics_cur.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "iconPath": "/images/tabbar/basics.png",
+        "selectedIconPath": "/images/tabbar/basics_cur.png",
+        "text": "登录"
+      }
+    ]
+  }
+}

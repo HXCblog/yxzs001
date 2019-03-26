@@ -1,0 +1,5 @@
+/* pages/index/collect/collect.wxss */
+.form{
+  width: 90%;
+  margin: 20px auto;
+}

@@ -1,0 +1,34 @@
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <view class='content' style='top:{{StatusBar}}px;'>新生登录</view>
+  </view>
+</view>
+<view class="margin-xl padding-xl bg-white radius shadow-lg" style='marigin-top:20px;' >
+   <view class="cu-form-group">
+    <view class='title'>学号</view>
+    <input placeholder="请输入学号" value="{{cardNumber}}" bindinput='setCardNumber' ></input>
+  </view>
+  <view class="flex justify-center">
+  <!--wx:if="{{!hasUserInfo && canIUse}}"-->
+    <button  open-type="getUserInfo" bindgetuserinfo="userLogin" class='cu-btn round bg-green shadow'> 登录 </button>
+  </view>
+</view>
+
+<view class="cu-modal {{modal=='show'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class='content'>登录失败</view>
+      <view class='action' bindtap='hideModal'>
+        <text class='icon-close text-red'></text>
+      </view>
+    </view>
+    <view class='padding-xl'>
+     {{errMsg}}
+    </view>
+  </view>
+</view>
+
+
+<view class="text-center margin-top">
+  <text class="text-grey text-xl">{{motto}}</text>
+</view>

@@ -1,0 +1,46 @@
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+   <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> 返回
+    </navigator>
+    <view class='content' style='top:{{StatusBar}}px;'>个人信息采集</view>
+  </view>
+</view>
+
+<form class='form ' bindsubmit="formSubmit" bindreset="formReset">
+  <view class="cu-form-group">
+    <view class='title'>手机号码</view>
+    <input placeholder="输入手机号码" class='radius' type='number' name='phone'></input>
+    <view class="cu-capsule radius">
+      <view class='cu-tag bg-blue '>
+        +86
+      </view>
+      <view class="cu-tag line-blue">
+        中国大陆
+      </view>
+    </view>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>个人邮箱</view>
+    <input placeholder='输入个人邮箱' class='radius' name="email"></input>
+    <text class='icon-edit text-blue'></text>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>现居地址</view>
+    <input placeholder='输入地址' class='radius' name='address'></input>
+    <text class='icon-locationfill text-blue'></text>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>父母姓名</view>
+    <input placeholder='输入父母姓名' class='radius' name='parentName'></input>
+    <text class='icon-friendfill text-blue'></text>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>父母联系方式</view>
+    <input placeholder='输入父母联系方式' class='radius' name='parentPhone'></input>
+    <text class='icon-mobile text-blue'></text>
+  </view>
+  <view class='padding flex flex-direction' >
+    <button class='cu-btn bg-blue margin-tb-sm lg' formType="submit">提交</button>
+  </view>  
+</form>
